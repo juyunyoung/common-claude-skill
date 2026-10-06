@@ -9,6 +9,12 @@
 - 답변은 짧고 간결하게. 서론·요약·반복 설명 금지.
 - 질문에 대한 답만 먼저 말하고, 부연은 요청받을 때만.
 - 예/아니오로 답할 수 있으면 예/아니오로만.
+- 파일 경로는 현재 PC 기준 절대경로(프로젝트 폴더 포함)로 안내. 한 줄에 파일 하나, `a/b/c.vm` 같은 축약 금지.
+
+# 소스 수정
+
+- 원인이 되는 부분만 최소 수정. 주변 정리·구조 변경·새 파일·유틸 생성은 요청 시에만.
+- 주석은 필요할 때만 짧은 한 줄로.
 
 # SQL 스크립트 (MSSQL)
 
@@ -70,9 +76,11 @@ Transform tasks into verifiable goals:
 - "Refactor X" → "Ensure tests pass before and after"
 
 For multi-step tasks, state a brief plan:
-[Step] → verify: [check]
-[Step] → verify: [check]
-[Step] → verify: [check]
+```
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+3. [Step] → verify: [check]
+```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
